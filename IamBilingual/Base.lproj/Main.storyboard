@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello I am a Lable" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zki-n6-dit">
+                                <rect key="frame" x="88" y="67" width="194" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I write 1000000000 lines every day." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXS-us-aqg">
+                                <rect key="frame" x="51" y="171" width="272.5" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="english" translatesAutoresizingMaskIntoConstraints="NO" id="JVE-Hf-7nx">
+                                <rect key="frame" x="67" y="245" width="240" height="169"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="M0G-Vl-X6r"/>
+                                    <constraint firstAttribute="height" constant="169" id="uql-BG-MXh"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JgY-dS-U32">
+                                <rect key="frame" x="120" y="114" width="134" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Do you like coding?">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JgY-dS-U32" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8hV-LQ-kjn"/>
+                            <constraint firstItem="zki-n6-dit" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="47" id="W6k-Jz-fKg"/>
+                            <constraint firstItem="JVE-Hf-7nx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W9i-5m-gFT"/>
+                            <constraint firstItem="JgY-dS-U32" firstAttribute="top" secondItem="zki-n6-dit" secondAttribute="bottom" constant="27" id="cdH-rz-I6x"/>
+                            <constraint firstAttribute="trailing" secondItem="zki-n6-dit" secondAttribute="trailing" constant="93" id="dWr-CQ-60e"/>
+                            <constraint firstItem="JVE-Hf-7nx" firstAttribute="top" secondItem="fXS-us-aqg" secondAttribute="bottom" constant="53" id="fZT-R4-Rvy"/>
+                            <constraint firstItem="zki-n6-dit" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="88" id="j1H-wR-bAs"/>
+                            <constraint firstItem="fXS-us-aqg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="seh-lI-Y5N"/>
+                            <constraint firstItem="fXS-us-aqg" firstAttribute="top" secondItem="JgY-dS-U32" secondAttribute="bottom" constant="27" id="v7c-iE-4vM"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="viewControllerImageView" destination="JVE-Hf-7nx" id="9og-h8-rH0"/>
+                        <outlet property="viewControllerLikeButotn" destination="JgY-dS-U32" id="9mk-pU-Tc0"/>
+                        <outlet property="viewControllerNumLabel" destination="fXS-us-aqg" id="Cpz-Hb-he5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="309.5" y="356.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="english" width="250" height="175"/>
+    </resources>
+</document>
